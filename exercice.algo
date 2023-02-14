@@ -1,0 +1,23 @@
+ALGORITHM exercice;
+VAR
+    i,v,w,L:integer;
+    ch:string;
+
+BEGIN
+    i:=0;
+    w:=1;
+    write("Veuillez donner l'expression a traiter :");
+    read(ch);
+     while(i<>'.') do 
+    L:=L+1;
+    if (i='A'or 'a'or 'E'or 'e'or 'I'or 'i'or 'E'or 'e'or 'Y'or 'y'or 'O'or'o') then 
+    v:=v+1;
+    end_if
+    if (i=' ') then 
+    w:=w+1;
+    i++; 
+    end_while
+    write("length of the sentence :",L);
+    write("number of words :",w);
+    write("number of vowels :",v);
+END
